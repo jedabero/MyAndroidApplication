@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Calculator</string>
+    <string name="first_number">First Number</string>
+    <string name="second_number">Second Number</string>
+    <string name="button_operation">Operate</string>
+    <string name="result_label">Result</string>
+    <string name="op_add_label">Add</string>
+    <string name="op_subtract_label">Subtract</string>
+    <string name="op_multiply_label">Multiply</string>
+    <string name="op_divide_label">Divide</string>
+    <string name="empty_field_error">Field cannot be empty</string>
+    <string name="second_field_is_zero_error">Cannot be zero</string>
+</resources>

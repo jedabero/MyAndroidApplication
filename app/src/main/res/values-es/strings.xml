@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi Aplicacion</string>
+    <string name="action_settings">Opciones</string>
+    <string name="hello_world">Hola mundo!</string>
+    <string name="title">Calculadora</string>
+    <string name="first_number">Numero Uno</string>
+    <string name="second_number">Numero Dos</string>
+    <string name="button_operation">Operar</string>
+    <string name="result_label">Resultado</string>
+    <string name="op_add_label">Sumar</string>
+    <string name="op_subtract_label">Restar</string>
+    <string name="op_divide_label">Dividir</string>
+    <string name="op_multiply_label">Multiplicar</string>
+    <string name="empty_field_error">Campo no puede estar vacio</string>
+    <string name="second_field_is_zero_error">No puede ser cero</string>
+</resources>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:id="@+id/title"
+        android:text="@string/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/calulator_title_size"/>
+
+    <TextView android:id="@+id/first_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/title"
+        android:text="@string/first_number" />
+
+    <EditText android:id="@+id/first_number_field"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignBaseline="@id/first_number_label"
+        android:layout_toEndOf="@id/first_number_label"
+        android:layout_toRightOf="@id/first_number_label" />
+
+    <TextView android:id="@+id/second_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/first_number_label"
+        android:text="@string/second_number"/>
+
+    <EditText android:id="@+id/second_number_field"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_number_field"
+        android:layout_alignBaseline="@id/second_number_label"
+        android:layout_toEndOf="@id/second_number_label"
+        android:layout_toRightOf="@id/second_number_label" />
+
+    <LinearLayout android:id="@+id/group"
+        android:layout_below="@id/second_number_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioGroup android:id="@+id/op_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton android:id="@+id/op_add_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/op_add_label" />
+            <RadioButton android:id="@+id/op_subtract_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/op_subtract_label" />
+            <RadioButton android:id="@+id/op_multiply_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/op_multiply_label" />
+            <RadioButton android:id="@+id/op_divide_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/op_divide_label" />
+
+        </RadioGroup>
+
+        <Button android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_operation"
+            android:onClick="doOperation" />
+
+        <TextView android:id="@+id/result_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/result_label"/>
+
+        <TextView android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
